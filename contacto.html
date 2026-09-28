@@ -4,10 +4,44 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contacto y Cotización de Mallas en Lima | Universal Mallas S.A.C.</title>
-    <meta name="description" content="🥇 Venta de carretillas en Lima, barretas y mas productos de ferreteria. 💸 Precios baratos en venta de carretillas en Lima y 📦 envio a todo el Perú. ¡Escoje tu carretilla!">
-    <meta name="author" content="soukhinkhan">
+    <title>Contacto - Envíos a todo el Perú | Universal Mallas S.A.C.</title>
+     <meta name="description"
+        content="Contáctanos para solicitar cotizaciones de mallas, gaviones, alambres de púas, planchas metálicas, plásticos y accesorios por mayor. Realizamos envíos a todo el Perú.">
+
+    <meta name="author" content="Universal Mallas S.A.C.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <link rel="canonical" href="https://www.universalmallas.com/">
+
+     <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Contacto | Universal Mallas S.A.C. - Mallas por Mayor en Perú">
+    <meta property="og:description"
+        content="Solicita una cotización de mallas, gaviones, alambres de púas, planchas metálicas, plásticos y accesorios por mayor en Perú.">
+    <meta property="og:url"
+        content="https://www.universalmallas.com/contacto¿">
+    <meta property="og:site_name" content="Universal Mallas S.A.C.">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:image"
+        content="https://www.universalmallas.com/assets/imgs/logo/logo.svg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Contacto | Universal Mallas S.A.C. - Mallas por Mayor en Perú">
+    <meta name="twitter:description"
+        content="Solicita una cotización de nuestros productos y consulta por envíos a todo el Perú.">
+    <meta name="twitter:image"
+        content="https://www.universalmallas.com/assets/imgs/logo/logo.svg">
+
+    <!-- Ubicación -->
+    <meta name="geo.region" content="PE">
+    <meta name="geo.placename" content="Perú">
+
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +60,9 @@
 
 <body>
 
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
 
 <!-- preloader start -->
 <div id="preloader">
-    <div class="preloader-close">x</div>
     <div class="sk-three-bounce">
         <div class="sk-child sk-bounce1"></div>
         <div class="sk-child sk-bounce2"></div>
@@ -335,7 +365,7 @@
                                         <!-- PRODUCTOS -->
                                         <li class="has-dropdown has-mega-menu">
 
-                                            <a href="javascript:void(0)">
+                                            <a href="productos.html">
                                                 Productos
                                             </a>
 
@@ -356,7 +386,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-metalicas.html">
+                                                                    href="productos/mallas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -388,7 +418,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-electrosoldadas.html">
+                                                                    href="productos/mallas-electrosoldadas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -420,7 +450,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/planchas-metalicas.html">
+                                                                    href="productos/planchas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -452,7 +482,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/alambres-puas.html">
+                                                                    href="productos/alambres-puas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -484,7 +514,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/gaviones.html">
+                                                                    href="productos/gaviones/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -516,7 +546,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/plasticos-accesorios.html">
+                                                                    href="productos/plasticos-accesorios/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -647,12 +677,29 @@
 
 
 <div id="popup-search-box">
+
     <div class="box-inner-wrap d-flex align-items-center">
-        <form id="form" action="#" method="get" role="search">
-            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+
+        <form id="search-form" role="search" autocomplete="off">
+
+            <input
+                id="popup-search"
+                type="search"
+                name="s"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar productos"
+            >
+
         </form>
-        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+
+        <div class="search-close">
+            <i class="fa-sharp fa-regular fa-xmark"></i>
+        </div>
+
     </div>
+
+    <div id="search-results" class="search-results"></div>
+
 </div>
 <!-- Header area end -->
 
@@ -1123,42 +1170,42 @@
                     <ul>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-electrosoldadas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas electrosoldadas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/planchas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Planchas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/alambres-puas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Alambres y púas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/gaviones/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Gaviones
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/plasticos-accesorios/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Plásticos y accesorios
                             </a>
@@ -1333,6 +1380,11 @@
 <script src="assets/js/vendor/ajax-form.js"></script>
 <script src="assets/js/plugins/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/search.js"></script>
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
 
 </html>

@@ -4,10 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fabricantes de Mallas Metálicas en Lima | Universal Mallas S.A.C.</title>
-    <meta name="description" content="">
-    <meta name="author" content="soukhinkhan">
+    <title>Nosotros - Fabricantes directos de Mallas en Perú| Universal Mallas S.A.C.</title>
+    <meta name="description"
+        content="Conoce Universal Mallas S.A.C., fabricantes y proveedores de mallas y soluciones para construcción e industria. Atendemos pedidos por mayor en todo el Perú.">
+    <meta name="author" content="Universal Mallas S.A.C.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Indexación -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://www.universalmallas.com/nosotros">
+
+     <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Nosotros | Universal Mallas S.A.C.">
+    <meta property="og:description"
+        content="Conoce Universal Mallas S.A.C., fabricantes y proveedores de mallas y soluciones para construcción e industria en todo el Perú.">
+    <meta property="og:url"
+        content="https://www.universalmallas.com/nosotros">
+    <meta property="og:site_name"
+        content="Universal Mallas S.A.C.">
+    <meta property="og:locale"
+        content="es_PE">
+    <meta property="og:image"
+        content="https://www.universalmallas.com/assets/imgs/logo/logo.svg">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Nosotros | Universal Mallas S.A.C.">
+    <meta name="twitter:description"
+        content="Conoce Universal Mallas S.A.C., fabricantes y proveedores de mallas y soluciones para construcción e industria en todo el Perú.">
+    <meta name="twitter:image"
+        content="https://www.universalmallas.com/assets/imgs/logo/logo.svg">
+
+    <!-- SEO local -->
+    <meta name="geo.region" content="PE">
+    <meta name="geo.placename" content="Perú">
+
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +63,8 @@
 
 <body>
 
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
 <!-- preloader start -->
 <div id="preloader">
-    <div class="preloader-close">x</div>
     <div class="sk-three-bounce">
         <div class="sk-child sk-bounce1"></div>
         <div class="sk-child sk-bounce2"></div>
@@ -335,7 +367,7 @@
                                         <!-- PRODUCTOS -->
                                         <li class="has-dropdown has-mega-menu">
 
-                                            <a href="javascript:void(0)">
+                                            <a href="productos.html">
                                                 Productos
                                             </a>
 
@@ -356,7 +388,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-metalicas.html">
+                                                                    href="productos/mallas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -388,7 +420,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-electrosoldadas.html">
+                                                                    href="productos/mallas-electrosoldadas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -420,7 +452,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/planchas-metalicas.html">
+                                                                    href="productos/planchas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -452,7 +484,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/alambres-puas.html">
+                                                                    href="productos/alambres-puas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -484,7 +516,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/gaviones.html">
+                                                                    href="productos/gaviones/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -516,7 +548,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/plasticos-accesorios.html">
+                                                                    href="productos/plasticos-accesorios/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -646,12 +678,29 @@
 </header>
 
 <div id="popup-search-box">
+
     <div class="box-inner-wrap d-flex align-items-center">
-        <form id="form" action="#" method="get" role="search">
-            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+
+        <form id="search-form" role="search" autocomplete="off">
+
+            <input
+                id="popup-search"
+                type="search"
+                name="s"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar productos"
+            >
+
         </form>
-        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+
+        <div class="search-close">
+            <i class="fa-sharp fa-regular fa-xmark"></i>
+        </div>
+
     </div>
+
+    <div id="search-results" class="search-results"></div>
+
 </div>
 <!-- Header area end -->
 
@@ -671,7 +720,7 @@
                     <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
                         <h1 class="breadcrumb__title color-white wow fadeIn animated"
                             data-wow-delay=".1s">
-                            Nosotros
+                            Fabricantes de Mallas en Perú
                         </h1>
                     </div>
 
@@ -799,410 +848,220 @@
 
     
 
-    <!-- latest-service2__area start -->
-<section class="latest-service2__area">
-    <div class="container">
-
-        <div class="row mb-minus-30">
-
-            <!-- Diferenciador 1 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="latest-service2__item text-center mb-30">
-
-                    <div class="latest-service2__item-icon-img mt-30">
-                        <img src="assets/imgs/service/service2/service2-card-img-1.png"
-                             alt="Fabricantes directos de mallas">
-                    </div>
-
-                    <div class="latest-service2__item-text">
-                        <h4>Fabricantes Directos</h4>
-                        <p>Precios competitivos y atención directa para tus proyectos.</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Diferenciador 2 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="latest-service2__item text-center mb-30">
-
-                    <div class="latest-service2__item-icon-img mt-30">
-                        <img src="assets/imgs/service/service2/service2-card-img-2.png"
-                             alt="Amplia variedad de mallas">
-                    </div>
-
-                    <div class="latest-service2__item-text">
-                        <h4>Amplia Variedad de Mallas</h4>
-                        <p>Soluciones para construcción, seguridad, industria y minería.</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Diferenciador 3 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="latest-service2__item text-center mb-30">
-
-                    <div class="latest-service2__item-icon-img mt-30">
-                        <img src="assets/imgs/service/service2/service2-card-img-3.png"
-                             alt="Productos de calidad">
-                    </div>
-
-                    <div class="latest-service2__item-text">
-                        <h4>Calidad y Confiabilidad</h4>
-                        <p>Productos seleccionados para ofrecer soluciones duraderas y confiables.</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Diferenciador 4 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="latest-service2__item text-center mb-30">
-
-                    <div class="latest-service2__item-icon-img mt-30">
-                        <img src="assets/imgs/service/service2/service2-card-img-4.png"
-                             alt="Envíos a todo el Perú">
-                    </div>
-
-                    <div class="latest-service2__item-text">
-                        <h4>Envíos a Todo el Perú</h4>
-                        <p>Llevamos nuestros productos a clientes y proyectos en todo el territorio nacional.</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- latest-service2__area end -->
-
-
-    <!-- Faq area start -->
-<section class="question__area overflow-hidden section-space question-bg">
-    <div id="primary" class="shape-wrapper">
-        <div class="container p-relative">
-
-
-            <div class="row align-items-center">
-
-                <!-- Contenido -->
-                <div class="col-xl-7 col-lg-6 col-md-6">
-                    <div class="content-area">
-                        <div class="faq">
-
-                            <div id="faq" class="accordion">
-
-                                <h6 class="subtitle wow fadeInLeft animated"
-                                    data-wow-delay=".6s">
-                                    Nuestra identidad
-                                </h6>
-
-                                <h2 class="title mb-40 wow fadeInLeft animated"
-                                    data-wow-delay=".8s">
-                                    Misión, Visión y Valores
-                                </h2>
-
-                                <!-- Misión -->
-                                <div class="card wow fadeInLeft animated"
-                                     data-wow-delay="1s">
-
-                                    <div class="card-header">
-                                        <button class="card-link"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#faq-1">
-                                            Misión
-                                        </button>
-                                    </div>
-
-                                    <div id="faq-1"
-                                         class="collapse show"
-                                         data-bs-parent="#faq">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Brindar productos y soluciones en mallas
-                                                metálicas y productos relacionados que
-                                                respondan a las necesidades de nuestros
-                                                clientes, ofreciendo calidad, variedad,
-                                                atención personalizada y compromiso en
-                                                cada proyecto.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Visión -->
-                                <div class="card wow fadeInLeft animated"
-                                     data-wow-delay="1.2s">
-
-                                    <div class="card-header">
-                                        <button class="card-link"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#faq-2">
-                                            Visión
-                                        </button>
-                                    </div>
-
-                                    <div id="faq-2"
-                                         class="collapse"
-                                         data-bs-parent="#faq">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Ser una empresa reconocida en el mercado
-                                                peruano por la calidad y confiabilidad
-                                                de nuestros productos, consolidándonos
-                                                como un aliado estratégico en soluciones
-                                                de mallas y productos metálicos para los
-                                                diferentes sectores y proyectos.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Valores -->
-                                <div class="card wow fadeInLeft animated"
-                                     data-wow-delay="1.4s">
-
-                                    <div class="card-header">
-                                        <button class="card-link"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#faq-3">
-                                            Nuestros valores
-                                        </button>
-                                    </div>
-
-                                    <div id="faq-3"
-                                         class="collapse"
-                                         data-bs-parent="#faq">
-
-                                        <div class="card-body">
-                                            <p>
-                                                Trabajamos con compromiso, responsabilidad,
-                                                calidad y orientación al cliente, buscando
-                                                construir relaciones basadas en la confianza
-                                                y ofrecer soluciones que respondan a las
-                                                necesidades de cada proyecto.
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Imagen -->
-                <div class="col-xl-5 col-lg-6 col-md-6">
-                    <div class="media">
-                        <img data-parallax='{"scale": 1.3, "smoothness": 15}'
-                             src="assets/imgs/faq/identidad.png"
-                             alt="Mallas metálicas Universal Mallas">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Faq area end -->
-
-    <!-- latest-team area start -->
-    <!--section class="latest-team__area overflow-hidden section-space latest-team-bg">
+        <!-- latest-service2__area start -->
+    <section class="latest-service2__area">
         <div class="container">
-            <div class="team-top heading-space">
-                <div class="latest-team__title-wrapper">
-                    <h6 class="subtitle wow fadeInLeft animated" data-wow-delay=".2s">Our Team</h6>
-                    <h2 class="title wow fadeInLeft animated" data-wow-delay=".4s">Meet Our Team Member</h2>
-                </div>
-                <div class="latest-team__button-right  wow fadeInRight animated" data-wow-delay=".3s">
-                    <button class="small-btn  right-icon team__slider-button-prev">
-                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 17L1 9L9 1" stroke="#001D08" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button class="small-btn team__slider-button-next">
-                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 17L9 9L1 1" stroke="#001D08" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
 
-            <div class="row p-relative">
-                <div class="col-12">
-                    <div class="latest-team__item margin-minus-400 mb-30">
-                        <div class="swiper card-slide">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide latest-team__item-slide wow fadeInLeft animated" data-wow-delay=".4s">
-                                    <div class="latest-team__item-media">
-                                        <div class="latest-team__item-media-social d-flex">
-                                            <a href="facebook.com" class="rr-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="twitter.com" class="rr-btn"><i class="fa-brands fa-twitter"></i></a>
-                                            <a href="instagram.com" class="rr-btn"><i class="fa-brands fa-instagram"></i></a>
-                                        </div>
-                                        <div class="latest-team__item-media-img-title ">
-                                            <h5>Designer</h5>
-                                            <a href="team-details.html"><h4>Arron Rodri</h4></a>
-                                        </div>
-                                      <div class="latest-item_thumb">
-                                        <a href="team-details.html">
-                                            <img src="assets/imgs/latest-team/letest-team-img1.jpg" alt="images not found" class="img-fluid">
-                                        </a>
-                                      </div>
-                                    </div>
-                                </div>
+            <div class="row mb-minus-30">
 
-                                <div class="swiper-slide latest-team__item-slide wow fadeInLeft animated" data-wow-delay=".8s">
-                                    <div class="latest-team__item-media">
-                                        <div class="latest-team__item-media-social d-flex">
-                                            <a href="facebook.com" class="rr-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="twitter.com" class="rr-btn"><i class="fa-brands fa-twitter"></i></a>
-                                            <a href="instagram.com" class="rr-btn"><i class="fa-brands fa-instagram"></i></a>
-                                        </div>
-                                        <div class="latest-team__item-media-img-title ">
-                                            <h5>Operator</h5>
-                                            <a href="team-details.html"><h4>Stifen Simons</h4></a>
-                                        </div>
-                                        <div class="latest-item_thumb">
-                                            <a href="team-details.html">
-                                                <img src="assets/imgs/latest-team/letest-team-img2.jpg" alt="images not found" class="img-fluid">
-                                            </a>
-                                          </div>
-                                    </div>
-                                </div>
+                <!-- Diferenciador 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="latest-service2__item text-center mb-30">
 
-                                <div class="swiper-slide latest-team__item-slide wow fadeInLeft animated" data-wow-delay="1.2s">
-                                    <div class="latest-team__item-media">
-                                        <div class="latest-team__item-media-social d-flex">
-                                            <a href="facebook.com" class="rr-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="twitter.com" class="rr-btn"><i class="fa-brands fa-twitter"></i></a>
-                                            <a href="instagram.com" class="rr-btn"><i class="fa-brands fa-instagram"></i></a>
-                                        </div>
-                                        <div class="latest-team__item-media-img-title ">
-                                            <h5>Senior Desinger</h5>
-                                            <a href="team-details.html"><h4>Josephine Ava</h4></a>
-                                        </div>
-                                        <div class="latest-item_thumb">
-                                            <a href="team-details.html">
-                                                <img src="assets/imgs/latest-team/letest-team-img3.jpg" alt="images not found" class="img-fluid">
-                                            </a>
-                                          </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide latest-team__item-slide wow fadeInLeft animated" data-wow-delay="1.6s">
-                                    <div class="latest-team__item-media">
-                                        <div class="latest-team__item-media-social d-flex">
-                                            <a href="facebook.com" class="rr-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="twitter.com" class="rr-btn"><i class="fa-brands fa-twitter"></i></a>
-                                            <a href="instagram.com" class="rr-btn"><i class="fa-brands fa-instagram"></i></a>
-                                        </div>
-                                        <div class="latest-team__item-media-img-title ">
-                                            <h5>Designer</h5>
-                                            <a href="team-details.html"><h4>William Mark</h4></a>
-                                        </div>
-                                        <div class="latest-item_thumb">
-                                            <a href="team-details.html">
-                                                <img src="assets/imgs/latest-team/letest-team-img4.jpg" alt="images not found" class="img-fluid">
-                                            </a>
-                                          </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide latest-team__item-slide">
-                                    <div class="latest-team__item-media">
-                                        <div class="latest-team__item-media-social d-flex">
-                                            <a href="facebook.com" class="rr-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="twitter.com" class="rr-btn"><i class="fa-brands fa-twitter"></i></a>
-                                            <a href="instagram.com" class="rr-btn"><i class="fa-brands fa-instagram"></i></a>
-                                        </div>
-                                        <div class="latest-team__item-media-img-title ">
-                                            <h5>Operator</h5>
-                                            <a href="team-details.html"><h4>Stifen Simons</h4></a>
-                                        </div>
-                                        <div class="latest-item_thumb">
-                                            <a href="team-details.html">
-                                                <img src="assets/imgs/latest-team/letest-team-img2.jpg" alt="images not found" class="img-fluid">
-                                            </a>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="latest-service2__item-icon-img mt-30">
+                            <img src="assets/imgs/service/service2/service2-card-img-1.png"
+                                alt="Fabricantes directos de mallas">
                         </div>
+
+                        <div class="latest-service2__item-text">
+                            <h4>Fabricantes Directos</h4>
+                            <p>Precios competitivos y atención directa para tus proyectos.</p>
+                        </div>
+
                     </div>
                 </div>
+
+                <!-- Diferenciador 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="latest-service2__item text-center mb-30">
+
+                        <div class="latest-service2__item-icon-img mt-30">
+                            <img src="assets/imgs/service/service2/service2-card-img-2.png"
+                                alt="Amplia variedad de mallas">
+                        </div>
+
+                        <div class="latest-service2__item-text">
+                            <h4>Amplia Variedad de Mallas</h4>
+                            <p>Soluciones para construcción, seguridad, industria y minería.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Diferenciador 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="latest-service2__item text-center mb-30">
+
+                        <div class="latest-service2__item-icon-img mt-30">
+                            <img src="assets/imgs/service/service2/service2-card-img-3.png"
+                                alt="Productos de calidad">
+                        </div>
+
+                        <div class="latest-service2__item-text">
+                            <h4>Calidad y Confiabilidad</h4>
+                            <p>Productos seleccionados para ofrecer soluciones duraderas y confiables.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Diferenciador 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="latest-service2__item text-center mb-30">
+
+                        <div class="latest-service2__item-icon-img mt-30">
+                            <img src="assets/imgs/service/service2/service2-card-img-4.png"
+                                alt="Envíos a todo el Perú">
+                        </div>
+
+                        <div class="latest-service2__item-text">
+                            <h4>Envíos a Todo el Perú</h4>
+                            <p>Llevamos nuestros productos a clientes y proyectos en todo el territorio nacional.</p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section-->
-    <!-- latest-team area end -->
+    </section>
+    <!-- latest-service2__area end -->
 
-    <!-- Faq area start -->
-    <!--section class="question__area overflow-hidden section-space question-bg">
-        <div id="primary" class="content-area">
+
+        <!-- Faq area start -->
+    <section class="question__area overflow-hidden section-space question-bg">
+        <div id="primary" class="shape-wrapper">
             <div class="container p-relative">
-                <div class="row align-items-center">
-                    <div class="col-xl-7 col-lg-6 col-md-6">
-                        <div class="faq">
-                            <div id="faq" class="accordion">
-                                <h6 class="subtitle wow fadeInLeft animated" data-wow-delay=".1s">Have Any Question</h6>
-                                <h2 class="title mb-40 wow fadeInLeft animated" data-wow-delay=".2s">Frequently Ask Question</h2>
 
-                                <div class="card wow fadeInLeft animated" data-wow-delay=".2s">
-                                    <div class="card-header">
-                                        <button class="card-link" data-bs-toggle="collapse" data-bs-target="#faq-1">
-                                            Appropriate For Your Specific Business
-                                        </button>
-                                    </div>
-                                    <div id="faq-1" class="collapse" data-bs-parent="#faq">
-                                        <div class="card-body">
-                                            <p>The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment. Dislike men who are so beguiled demoraliz worlds.</p>
+
+                <div class="row align-items-center">
+
+                    <!-- Contenido -->
+                    <div class="col-xl-7 col-lg-6 col-md-6">
+                        <div class="content-area">
+                            <div class="faq">
+
+                                <div id="faq" class="accordion">
+
+                                    <h6 class="subtitle wow fadeInLeft animated"
+                                        data-wow-delay=".6s">
+                                        Nuestra identidad
+                                    </h6>
+
+                                    <h2 class="title mb-40 wow fadeInLeft animated"
+                                        data-wow-delay=".8s">
+                                        Misión, Visión y Valores
+                                    </h2>
+
+                                    <!-- Misión -->
+                                    <div class="card wow fadeInLeft animated"
+                                        data-wow-delay="1s">
+
+                                        <div class="card-header">
+                                            <button class="card-link"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-1">
+                                                Misión
+                                            </button>
+                                        </div>
+
+                                        <div id="faq-1"
+                                            class="collapse show"
+                                            data-bs-parent="#faq">
+
+                                            <div class="card-body">
+                                                <p>
+                                                    Brindar productos y soluciones en mallas
+                                                    metálicas y productos relacionados que
+                                                    respondan a las necesidades de nuestros
+                                                    clientes, ofreciendo calidad, variedad,
+                                                    atención personalizada y compromiso en
+                                                    cada proyecto.
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card wow fadeInLeft animated" data-wow-delay=".3s">
-                                    <div class="card-header">
-                                        <button class="card-link" data-bs-toggle="collapse" data-bs-target="#faq-2">
-                                            Design & Development Troubleshooting
-                                        </button>
-                                    </div>
-                                    <div id="faq-2" class="collapse" data-bs-parent="#faq">
-                                        <div class="card-body">
-                                            <p>The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment. Dislike men who are so beguiled demoraliz worlds.</p>
+
+                                    <!-- Visión -->
+                                    <div class="card wow fadeInLeft animated"
+                                        data-wow-delay="1.2s">
+
+                                        <div class="card-header">
+                                            <button class="card-link"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-2">
+                                                Visión
+                                            </button>
+                                        </div>
+
+                                        <div id="faq-2"
+                                            class="collapse"
+                                            data-bs-parent="#faq">
+
+                                            <div class="card-body">
+                                                <p>
+                                                    Ser una empresa reconocida en el mercado
+                                                    peruano por la calidad y confiabilidad
+                                                    de nuestros productos, consolidándonos
+                                                    como un aliado estratégico en soluciones
+                                                    de mallas y productos metálicos para los
+                                                    diferentes sectores y proyectos.
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card wow fadeInLeft animated" data-wow-delay=".4s">
-                                    <div class="card-header">
-                                        <button class="card-link" data-bs-toggle="collapse" data-bs-target="#faq-3">
-                                            Online Support & Action
-                                        </button>
-                                    </div>
-                                    <div id="faq-3" class="collapse" data-bs-parent="#faq">
-                                        <div class="card-body">
-                                            <p>The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment. Dislike men who are so beguiled demoraliz worlds.</p>
+
+                                    <!-- Valores -->
+                                    <div class="card wow fadeInLeft animated"
+                                        data-wow-delay="1.4s">
+
+                                        <div class="card-header">
+                                            <button class="card-link"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-3">
+                                                Nuestros valores
+                                            </button>
+                                        </div>
+
+                                        <div id="faq-3"
+                                            class="collapse"
+                                            data-bs-parent="#faq">
+
+                                            <div class="card-body">
+                                                <p>
+                                                    Trabajamos con compromiso, responsabilidad,
+                                                    calidad y orientación al cliente, buscando
+                                                    construir relaciones basadas en la confianza
+                                                    y ofrecer soluciones que respondan a las
+                                                    necesidades de cada proyecto.
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Imagen -->
                     <div class="col-xl-5 col-lg-6 col-md-6">
                         <div class="media">
-                            <img data-parallax='{"scale": 1.3, "smoothness": 15}' src="assets/imgs/faq/faq.jpg" alt="img not found">
+                            <img data-parallax='{"scale": 1.3, "smoothness": 15}'
+                                src="assets/imgs/faq/identidad.png"
+                                alt="Mallas metálicas Universal Mallas">
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </section-->
+    </section>
     <!-- Faq area end -->
+
     
 </main>
 
@@ -1331,42 +1190,42 @@
                     <ul>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-electrosoldadas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas electrosoldadas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/planchas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Planchas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/alambres-puas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Alambres y púas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/gaviones/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Gaviones
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/plasticos-accesorios/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Plásticos y accesorios
                             </a>
@@ -1541,6 +1400,11 @@
 <script src="assets/js/vendor/ajax-form.js"></script>
 <script src="assets/js/plugins/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/search.js"></script>
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
 
 </html>

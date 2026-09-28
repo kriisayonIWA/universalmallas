@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const productosCategoria = productos.filter(
         producto => producto.categoria === categoria
     );
-
+    
     container.innerHTML = productosCategoria.map(producto => {
-
+        const urlProducto = `${producto.id}/index.html`;
         return `
 
             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -52,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             src="../../${producto.imagen}"
                             alt="${producto.alt}"
                         >
+
+                            ${producto.proximamente ? `
+                                <span class="producto-badge">
+                                    PRÓXIMAMENTE
+                                </span>
+                            ` : ""}
 
                         <div class="rr-fea-product__icon-box rr-product-action">
 
@@ -84,6 +90,18 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>
                             ${producto.descripcion}
                         </p>
+
+                        <div class="rr-fea-product__link-box btn-product-red">
+
+                           <a
+                                href="${urlProducto}"
+                                class="cart-button icon-btn button rr-btn-cart"
+                            >
+                                <span></span>
+                                Ver producto
+                            </a>
+
+                        </div>
 
                         <div class="rr-fea-product__link-box">
 

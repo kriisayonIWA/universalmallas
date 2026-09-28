@@ -22072,6 +22072,92 @@ START: Slider CSS
 }
 
 
+.btn-product-red a{
+  background: var(--rr-theme-primary) !important;
+  margin-bottom: 35px;
+}
+
+@media (max-width:425px) {
+.btn-product-red a{
+  margin-bottom: 15px;
+}
+}
+
+
+.producto-badge {
+    position: absolute;
+    top: 18px;
+    left: -5px;
+    z-index: 5;
+
+    background: #e30613;
+    color: #fff;
+
+    padding: 8px 18px 8px 14px;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto-badge::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    border-top: 6px solid #9d0009;
+    border-left: 6px solid transparent;
+}
+
+
+.search-results {
+    display: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 0;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-result-item {
+    display: block;
+    padding: 18px 20px;
+    border-bottom: 1px solid #eeeeee;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: #f5f5f5;
+}
+
+.search-result-item h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #111111;
+}
+
+.search-result-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.search-no-results {
+    padding: 20px;
+    text-align: center;
+    color: #666666;
+}
+
 /* !END:  Slider CSS */
 
 /*# sourceMappingURL=main.css.map */

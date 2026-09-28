@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fabricación de Mallas en Lima, Perú | Universal Mallas S.A.C.</title>
+    <title>Universal Mallas S.A.C. | Fabricación y Venta de Mallas por Mayor en Perú</title>
     <meta name="description" content="Fabricación y venta de mallas en Lima, Perú. Universal Mallas S.A.C. ofrece mallas metálicas, mallas para construcción, cercos y soluciones a medida para empresas y proyectos.">
     <meta name="keywords" content="mallas en Lima, mallas en peru, fabricacion de mallas en peru, fabricación de mallas en Lima, mallas metálicas, mallas para construcción, venta de mallas, mallas industriales, Universal Mallas">
     <meta name="author" content="Universal Mallas S.A.C.">
@@ -356,7 +356,7 @@
                                         <!-- PRODUCTOS -->
                                         <li class="has-dropdown has-mega-menu">
 
-                                            <a href="javascript:void(0)">
+                                            <a href="productos.html">
                                                 Productos
                                             </a>
 
@@ -377,7 +377,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-metalicas.html">
+                                                                    href="productos/mallas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -409,7 +409,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/mallas-electrosoldadas.html">
+                                                                    href="productos/mallas-electrosoldadas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -441,7 +441,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/planchas-metalicas.html">
+                                                                    href="productos/planchas-metalicas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -473,7 +473,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/alambres-puas.html">
+                                                                    href="productos/alambres-puas/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -505,7 +505,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/gaviones.html">
+                                                                    href="productos/gaviones/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -537,7 +537,7 @@
 
                                                                 <a
                                                                     class="rr-btn"
-                                                                    href="productos/plasticos-accesorios.html">
+                                                                    href="productos/plasticos-accesorios/index.html">
                                                                     Ver productos
                                                                 </a>
 
@@ -668,13 +668,31 @@
 
 <!-- Header area end -->
 <div id="popup-search-box">
+
     <div class="box-inner-wrap d-flex align-items-center">
-        <form id="form" action="#" method="get" role="search">
-            <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+
+        <form id="search-form" role="search" autocomplete="off">
+
+            <input
+                id="popup-search"
+                type="search"
+                name="s"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar productos"
+            >
+
         </form>
-        <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+
+        <div class="search-close">
+            <i class="fa-sharp fa-regular fa-xmark"></i>
+        </div>
+
     </div>
+
+    <div id="search-results" class="search-results"></div>
+
 </div>
+
         <!-- /#popup-search-box -->
 <!-- Body main wrapper start -->
 <main>
@@ -2103,42 +2121,42 @@
                     <ul>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/mallas-electrosoldadas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Mallas electrosoldadas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/planchas-metalicas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Planchas metálicas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/alambres-puas/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Alambres y púas
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/gaviones/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Gaviones
                             </a>
                         </li>
 
                         <li>
-                            <a href="productos.html">
+                            <a href="productos/plasticos-accesorios/index.html">
                                 <i class="fa-solid fa-angle-right"></i>
                                 Plásticos y accesorios
                             </a>
@@ -2313,6 +2331,8 @@
 <script src="assets/js/vendor/ajax-form.js"></script>
 <script src="assets/js/plugins/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/search.js"></script>
 <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
 </script>
