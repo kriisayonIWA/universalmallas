@@ -19,6 +19,24 @@ const searchData = [
     },
 
     {
+        titulo: "Malla Olimpica PVC Plastificada",
+        keywords: [
+            "malla",
+            "mallas",
+            "malla metalica",
+            "mallas metalicas",
+            "malla pvc",
+            "mallas olimpica",
+            "malla olimpica pvc",
+            "mallas plastificada",
+            "malla industrial",
+            "mallas industriales"
+        ],
+        descripcion: "Malla olímpica de acero plastificada con PVC, diseñada para cercos,",
+        url: "productos/mallas-metalicas/malla-olimpica-pvc/"
+    },
+
+    {
         titulo: "Mallas Electrosoldadas",
         keywords: [
             "malla electrosoldada",

@@ -1995,12 +1995,13 @@ textarea {
 @media (max-width: 575px) {
   .breadcrumb__title {
     font-size: 34px;
-    line-height: 20px;
+    line-height: 30px;
   }
 }
 @media (max-width:450px) {
   .breadcrumb__title {
     font-size: 32px;
+    line-height: 30px;
   }
 }
 
@@ -2037,10 +2038,51 @@ textarea {
   color: var(--rr-common-white);
   font-family: var(--rr-ff-body);
   font-weight: var(--rr-fw-regular);
-  line-height: var(--rr-lh-h5);
+  line-height: 10px;
   font-size: 20px;
   font-style: normal;
 }
+
+.breadcrumb__menu ul li.active span {
+
+  line-height: 10px !important;
+
+}
+
+@media  (max-width: 588px) {
+  .breadcrumb__menu ul li span{
+    font-size: 10px;}
+  .breadcrumb__menu ul li.active span{
+    font-size: 10px !important; 
+  }
+}
+
+
+/* Menor a 1024px */
+@media (max-width: 1023px) {
+    .inner-page .header-top-menu li a,
+    .inner-page .header-top-menu li {
+        font-size: 7px;
+    }
+}
+
+/* De 1024px a 1179px */
+@media (min-width: 1024px) and (max-width: 1179px) {
+    .inner-page .header-top-menu li a,
+    .inner-page .header-top-menu li {
+        font-size: 10px;
+    }
+}
+
+/* Desde 1180px */
+@media (min-width: 1180px) {
+    .inner-page .header-top-menu li a,
+    .inner-page .header-top-menu li {
+        font-size: 13px;
+    }
+}
+
+
 .breadcrumb__menu ul li span a:hover {
   color: var(--rr-theme-primary);
 }
@@ -22156,6 +22198,10 @@ START: Slider CSS
     padding: 20px;
     text-align: center;
     color: #666666;
+}
+
+.product-gallery-hidden {
+    display: none;
 }
 
 /* !END:  Slider CSS */
