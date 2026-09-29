@@ -2931,7 +2931,7 @@ textarea {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #121212;
+  background-color: var(--rr-heading-primary);
   z-index: 999;
 }
 
@@ -2940,7 +2940,7 @@ textarea {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #121212;
+  background-color:var(--rr-heading-primary);
 }
 
 .sk-three-bounce .sk-child {
@@ -22204,6 +22204,42 @@ START: Slider CSS
     display: none;
 }
 
+.breadcrumb-mopvc-bg {
+    position: relative;
+    background-image: url("../imgs/menu/malla-olimpica-pvc.png");
+}
+
+.breadcrumb-mog-bg{
+    background-image: url("../imgs/menu/malla-olimpica-galvanizada.png");
+}
+
+.breadcrumb-mp-bg{
+    background-image: url("../imgs/menu/malla-perforada.png");
+}
+
+.breadcrumb-mz-bg{
+    background-image: url("../imgs/menu/malla-zaranda.png");
+}
+
+.breadcrumb-mc-bg{
+    background-image: url("../imgs/menu/malla-cerco.png");
+}
+
+.breadcrumb-mg-bg{
+  background-image: url("../imgs/menu/malla-gallinero.png");
+}
+
+.breadcrumb-me-bg{
+  background-image: url("../imgs/menu/malla-expandible.png");
+}
+
+.breadcrumb-mr-bg{
+  background-image: url("../imgs/menu/malla-rachell.png");
+}
+
+.breadcrumb-mi-bg{
+  background-image: url("../imgs/menu/malla-inoxidable.png");
+}
 /* !END:  Slider CSS */
 
 /*# sourceMappingURL=main.css.map */

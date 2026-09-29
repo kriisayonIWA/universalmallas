@@ -8,21 +8,58 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    // =========================================================
+    // RESOLVER RUTA
+    // Convierte las rutas del search-data.js en rutas correctas
+    // desde la raíz del proyecto "universalmallas"
+    // =========================================================
+    function resolverRuta(url) {
+
+        const rutaActual = window.location.pathname;
+
+        const indiceProyecto = rutaActual.indexOf("/universalmallas/");
+
+        if (indiceProyecto === -1) {
+            return url;
+        }
+
+        const raizProyecto = rutaActual.substring(
+            0,
+            indiceProyecto + "/universalmallas/".length
+        );
+
+        return raizProyecto + url;
+    }
+
+
+    // =========================================================
+    // NORMALIZAR TEXTO
+    // Permite buscar con o sin tildes
+    // =========================================================
     function normalizeText(text) {
+
         return text
             .toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "");
+
     }
 
+
+    // =========================================================
+    // BUSCAR PRODUCTOS
+    // =========================================================
     function searchProducts(query) {
 
         const normalizedQuery = normalizeText(query.trim());
 
         if (!normalizedQuery) {
+
             searchResults.innerHTML = "";
             searchResults.style.display = "none";
+
             return [];
+
         }
 
         const results = searchData.filter(item => {
@@ -39,11 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 description.includes(normalizedQuery) ||
                 keywords.includes(normalizedQuery)
             );
+
         });
 
         return results;
+
     }
 
+
+    // =========================================================
+    // MOSTRAR RESULTADOS
+    // =========================================================
     function showResults(results) {
 
         searchResults.innerHTML = "";
@@ -59,13 +102,17 @@ document.addEventListener("DOMContentLoaded", function () {
             searchResults.style.display = "block";
 
             return;
+
         }
+
 
         results.forEach(item => {
 
             const result = document.createElement("a");
 
-            result.href = item.url;
+            // AQUÍ ESTÁ EL CAMBIO IMPORTANTE
+            result.href = resolverRuta(item.url);
+
             result.className = "search-result-item";
 
             result.innerHTML = `
@@ -76,11 +123,17 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             searchResults.appendChild(result);
+
         });
 
         searchResults.style.display = "block";
+
     }
 
+
+    // =========================================================
+    // BUSCAR MIENTRAS ESCRIBE
+    // =========================================================
     searchInput.addEventListener("input", function () {
 
         const results = searchProducts(this.value);
@@ -89,6 +142,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+
+    // =========================================================
+    // ENVIAR FORMULARIO
+    // =========================================================
     searchForm?.addEventListener("submit", function (event) {
 
         event.preventDefault();
@@ -96,7 +153,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const results = searchProducts(searchInput.value);
 
         if (results.length > 0) {
-            window.location.href = results[0].url;
+
+            // AQUÍ TAMBIÉN ESTÁ EL CAMBIO IMPORTANTE
+            window.location.href = resolverRuta(results[0].url);
+
         }
 
     });
