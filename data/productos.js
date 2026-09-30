@@ -97,5 +97,83 @@ const productos = [
         alt: "Malla de acero inoxidable para aplicaciones industriales en Lima",
         destacado: false,
         proximamente: false
+    },
+
+    {
+        id: "malla-electrosoldada",
+        categoria: "mallas-electrosoldadas",
+        nombre: "Malla Electrosoldada",
+        descripcion: "Malla electrosoldada de acero fabricada mediante la unión de alambres en puntos de intersección, ofreciendo resistencia, estabilidad y durabilidad. Ideal para cercos, construcción, refuerzo, protección y diferentes aplicaciones industriales y comerciales.",
+        imagen: "assets/imgs/productos/mallas-electrosoldadas/malla-electrosoldada-producto.png",
+        alt: "Malla electrosoldada de acero para construcción y cercos en Lima",
+        destacado: false,
+        proximamente: false
+    },
+
+    {
+        id: "plancha-electrosoldada",
+        categoria: "mallas-electrosoldadas",
+        nombre: "Plancha Electrosoldada",
+        descripcion: "Plancha electrosoldada fabricada a pedido del cliente. Disponible en espesores de 2.6 mm, 3.20 mm y 4.10 mm, con diferentes medidas y cocadas según los requerimientos de cada proyecto.",
+        imagen: "assets/imgs/productos/mallas-electrosoldadas/plancha-electrosoldada-producto.png",
+        alt: "Plancha electrosoldada a medida para proyectos industriales y de construcción en Lima",
+        destacado: false,
+        proximamente: false
+    },
+
+    {
+        id: "plancha-expandible",
+        categoria: "planchas-metalicas",
+        nombre: "Plancha Expandible",
+        descripcion: "Plancha expandible de 1.20 x 2.40 mts. Disponible en espesores de 3.2 mm, 3.5 mm y 4.10 mm, ideal para proyectos de construcción, industria, cerramientos y diversas aplicaciones metálicas.",
+        imagen: "assets/imgs/productos/planchas-metalicas/plancha-expandible-producto.png",
+        alt: "Plancha expandible de 1.20 x 2.40 mts en diferentes espesores para construcción e industria",
+        destacado: false,
+        proximamente: false
+    },
+
+
+    {
+        id: "alambre-galvanizado",
+        categoria: "alambres-puas",
+        nombre: "Alambre Galvanizado",
+        descripcion: "Alambre galvanizado para venta por mayor, disponible en calibres #16, #14, #12, #10 y #08. Ideal para construcción, cercos, instalaciones, amarre y diversas aplicaciones industriales y agrícolas.",
+        imagen: "assets/imgs/productos/alambres-puas/alambre-galvanizado-producto.png",
+        alt: "Alambre galvanizado por mayor en calibres #16, #14, #12, #10 y #08",
+        destacado: false,
+        proximamente: false
+    },
+
+    {
+        id: "pua",
+        categoria: "alambres-puas",
+        nombre: "Púas",
+        descripcion: "Alambre de púas para cercos y delimitación de terrenos. Ideal para aplicaciones de seguridad, protección perimetral, áreas agrícolas, industriales y proyectos de cerramiento.",
+        imagen: "assets/imgs/productos/alambres-puas/pua-producto.png",
+        alt: "Alambre de púas para cercos, seguridad y delimitación de terrenos",
+        destacado: false,
+        proximamente: false
+    },
+
+    {
+        id: "malla-gavion",
+        categoria: "gaviones",
+        nombre: "Malla Gavión Tipo Caja",
+        descripcion: "Malla para gaviones fabricada con sistema de doble torsión, ideal para la construcción de muros de contención, protección de cauces, estabilización de terrenos y proyectos de infraestructura.",
+        imagen: "assets/imgs/productos/gaviones/malla-gavion-producto.png",
+        alt: "Malla para gaviones de doble torsión para muros de contención y protección de cauces",
+        destacado: false,
+        proximamente: false
+    },
+
+    {
+        id: "plastico-doble-cara",
+        categoria: "plasticos-accesorios",
+        nombre: "Plástico Doble Cara Azul / Negro",
+        descripcion: "Plástico doble cara azul / negro disponible en medidas de 40\", 60\", 80\", 90\", 100\", 120\", 160\" y 200\". Ideal para impermeabilización, coberturas, protección de superficies, construcción, obras civiles, agricultura y protección de equipos y materiales.",
+        imagen: "assets/imgs/productos/plasticos-accesorios/plastico-doble-cara-producto.png",
+        alt: "Plástico doble cara azul y negro en diferentes medidas para construcción, agricultura y protección de superficies",
+        destacado: false,
+        proximamente: false
     }
 ];

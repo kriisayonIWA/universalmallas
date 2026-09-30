@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="product-action-btn">
 
                                 <a
-                                    href="#"
+                                    href="${urlProducto}"
                                     class="icon-btn"
                                     aria-label="Solicitar cotización de ${producto.nombre}"
                                 >
-                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-eye"></i>
                                 </a>
 
                             </div>

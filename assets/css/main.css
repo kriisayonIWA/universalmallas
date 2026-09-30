@@ -18531,7 +18531,7 @@ html .ui-button.ui-state-disabled:active {
 .rr-fea-product__item:hover .rr-fea-product__link-box {
   opacity: 1;
   visibility: visible;
-  margin-top: -27px;
+  /*margin-top: -27px;*/
   position: relative;
   right: 1px;
 }
@@ -22116,7 +22116,7 @@ START: Slider CSS
 
 .btn-product-red a{
   background: var(--rr-theme-primary) !important;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 @media (max-width:425px) {
@@ -22241,5 +22241,23 @@ START: Slider CSS
   background-image: url("../imgs/menu/malla-inoxidable.png");
 }
 /* !END:  Slider CSS */
+.breadcrumb-mallas-electrosoldadas-bg{
+  background-image: url("../imgs/menu/mallas-electrosoldadas.png");
+}
 
+.breadcrumb-planchas-metalicas-bg{
+  background-image: url("../imgs/menu/plancha-metalica.png");
+}
+
+.breadcrumb-alambres-puas-bg{
+  background-image: url("../imgs/menu/alambres-pua.png");
+}
+
+.breadcrumb-gaviones-bg{
+  background-image: url("../imgs/menu/gaviones.png");
+}
+
+.breadcrumb-plasticos-bg{
+  background-image: url("../imgs/menu/plasticos.png");
+}
 /*# sourceMappingURL=main.css.map */
