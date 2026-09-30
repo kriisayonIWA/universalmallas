@@ -4,16 +4,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!relatedContainer) return;
 
-    // Producto actual
+
+    // ==========================================
+    // PRODUCTO ACTUAL
+    // ==========================================
+
     const productoActualId = relatedContainer.dataset.productoId;
 
-    // Categoría de productos relacionados
-    const categoriaRelacionada = "mallas-metalicas";
 
-    // Cantidad máxima de productos
+    // ==========================================
+    // BUSCAR PRODUCTO ACTUAL EN productos.js
+    // ==========================================
+
+    const productoActual = productos.find(
+        producto => producto.id === productoActualId
+    );
+
+
+    // Si no se encuentra el producto
+    if (!productoActual) {
+
+        relatedContainer.innerHTML = `
+            <div class="col-12">
+                <p>No se encontró el producto actual.</p>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    // ==========================================
+    // CATEGORÍA DINÁMICA
+    // ==========================================
+
+    const categoriaRelacionada = productoActual.categoria;
+
+
+    // ==========================================
+    // CANTIDAD MÁXIMA DE PRODUCTOS
+    // ==========================================
+
     const limiteProductos = 4;
 
-    // Buscar productos relacionados
+
+    // ==========================================
+    // BUSCAR PRODUCTOS RELACIONADOS
+    // ==========================================
+
     const productosRelacionados = productos
         .filter(producto =>
             producto.categoria === categoriaRelacionada &&
@@ -23,8 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .slice(0, limiteProductos);
 
 
-    // Si no existen productos
+    // ==========================================
+    // SI NO EXISTEN PRODUCTOS
+    // ==========================================
+
     if (productosRelacionados.length === 0) {
+
         relatedContainer.innerHTML = `
             <div class="col-12">
                 <p>No hay productos relacionados disponibles.</p>
@@ -35,11 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // Generar tarjetas
+    // ==========================================
+    // GENERAR TARJETAS
+    // ==========================================
+
     productosRelacionados.forEach(producto => {
 
         const mensajeWhatsApp =
             `Hola Universal Mallas S.A.C., deseo cotizar ${producto.nombre}`;
+
 
         const urlWhatsApp =
             `https://wa.me/51927782207?text=${encodeURIComponent(mensajeWhatsApp)}`;
@@ -50,10 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="rr-fea-product__item rr-pro-img mb-30">
 
+
                     <!-- Imagen -->
                     <div class="rr-fea-product__thumb fix p-relative">
 
-                        <a href="../../../productos/${producto.id}/">
+                        <a href="../../../productos/${producto.categoria}/${producto.id}/index.html">
 
                             <img
                                 src="../../../${producto.imagen}"
@@ -63,8 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         </a>
 
-                        
-
                     </div>
 
 
@@ -73,18 +118,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <h4 class="rr-fea-product__title-sm">
 
-                            <a href="../../../productos/${producto.id}/">
+                            <a href="../../../productos/${producto.categoria}/${producto.id}/index.html">
                                 ${producto.nombre}
                             </a>
 
                         </h4>
 
 
-                      
-
-
-                        <!-- Cotizar -->
-                        <div class="rr-fea-product__link-box ">
+                        <!-- Cotizar / Ver producto -->
+                        <div class="rr-fea-product__link-box">
 
                             <a
                                 href="../../../productos/${producto.categoria}/${producto.id}/index.html"
@@ -92,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            
 
                                 <span></span>
 
@@ -110,27 +151,39 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
 
-        relatedContainer.insertAdjacentHTML("beforeend", tarjeta);
+        relatedContainer.insertAdjacentHTML(
+            "beforeend",
+            tarjeta
+        );
 
     });
 
 });
 
 
-// Compartir producto
+// ==========================================
+// COMPARTIR PRODUCTO
+// ==========================================
+
 function compartirProducto(event, nombre, id) {
 
     event.preventDefault();
 
+
     const url =
         `${window.location.origin}/productos/${id}/`;
+
 
     if (navigator.share) {
 
         navigator.share({
+
             title: nombre,
+
             text: `Conoce ${nombre} en Universal Mallas S.A.C.`,
+
             url: url
+
         });
 
     } else {
